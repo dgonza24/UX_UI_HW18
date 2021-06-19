@@ -44,25 +44,29 @@ nav p {
     height: 675px;
     left: 180px;
     top: 337px;
-    z-index: 3;
-    padding: 25px;
+    padding: 25px; 
     background: linear-gradient(180deg, rgba(33, 17, 97, 0.4) 59.9%, rgba(204, 3, 172, 0.4) 100%); 
+    z-index: 6;
 }
 
 #statement {
+    top: 400px;
     color: #eef4fb;
     font-size: x-large;
     position: center;
-    z-index: 3;
+    z-index: 5;
 }
 .ticketSection {
-    float: center;
-    grid-area: myArea;
-    display: grid;
+    flex-flow: center;
+    flex-direction: nowrap;
     margin: 0px 5%;
     padding-top: 1000px;
     padding-left: 80px;
     color: white;
+}
+.ticketSection h1{
+    align-content: center;
+    justify-content: center;
 }
 .ticketSection h2{
     font-weight: 200;
@@ -72,17 +76,21 @@ nav p {
 .ticketSection .movieImage {
     float: left;
     padding-left: 100px;
+    padding-left: 50px;
 }
 
 .movieText{
+    align-items: right;
+    justify-content: right; 
     max-width: 1200px;
-    margin: auto;
-    padding: 0 5%;
+    margin: 50px;
+    padding: 100px;
     list-style: none;
     position: relative;
     bottom: 0px;
     right: 0px;
     border: 15px;
+    
 }
 
 #fallSeason{
@@ -94,25 +102,66 @@ nav p {
 }
 
 .behindThecourtains{
-    grid: flow box;
-    float: inline-start;
-    display: flexbox;
+    flex-flow: center;
+    display: center;
+    padding-top: 500px;
     padding-left: 80px;
     color: white;
 
 
 }
 .behindThecourtains h4 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    top: 2000px;
     color: white;
     font: 400;
-    font-weight: 400;
+    font-weight: 500;
 }
 .supportThecityTheater {
     float: center;
     color: white;
     text-align: left;
     padding-left: 80px;
-    padding
+}
+.auditons {
+    display: flexbox;
+    flex-flow: column;
+    position: relative;
+    top:2000px;
+    left:150px;
+    align-content: flex-end;
+    justify-content: left;
+}
+.auditionText {
+    align-content: right;
+ 
+}
+.Clases {
+    display: flexbox;
+    flex: right;
+    position: absolute;
+    top: 2500px;
+    left: 200px;
+    border: 1px, solid #000000;
+    z-index: 1;
+}
+.textClasses{
+    align-content: right;
+
+}
+.iconsClasses{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    border: 1px, solid #000000;
+    z-index: 2;
+
+}
+.right {
+    align-content: center;
+    justify-content: center;
 }
 
 .footer {
@@ -122,6 +171,7 @@ nav p {
     height: 470px;
     left: 0px;
     top: 5000px;
+    padding-left: 80px;
 }
 
 footer a {
@@ -149,6 +199,9 @@ footer a {
     padding: 50px;
     margin: 20px;
     background-color: rgba(33, 17, 97);
+    padding-right: auto;
+    align-content: flex-end;
+    justify-content: right;
 }
 .mailingText{
     color: white;
@@ -156,7 +209,6 @@ footer a {
 }
 #contactUs {
     justify-content: left;
-    text-decoration-line: underline;
     color: #000;
     font-weight: bold;
 }
